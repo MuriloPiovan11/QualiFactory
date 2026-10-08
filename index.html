@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linha de Qualidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <header id="hud">
+    <div><span>Fase</span><b id="hLevel">1</b></div>
+    <div><span>Tempo</span><b id="hTime">5:00</b></div>
+    <div><span>Esteira</span><b id="hSpd">100%</b></div>
+    <div><span>Pontos (meta)</span><b><em id="hScore">0</em> / <em id="hGoal">300</em></b></div>
+    <div><span>Qualidade expedida</span><b id="hQual">100%</b></div>
+    <div><span>Conceito</span><b id="hX">5S</b></div>
+    <div class="skill" id="sQ"><kbd>Q</kbd> Lupa</div>
+    <div class="skill" id="sR"><kbd>R</kbd> Freio</div>
+    <div class="skill" id="sF" style="display:none"><kbd>F</kbd> Ajuste</div>
+  </header>
+  <div id="stage">
+    <canvas id="cv" width="960" height="540" aria-label="Linha de produção"></canvas>
+    <div id="toast" role="status"></div>
+    <section id="overlay"><div id="card"></div></section>
+  </div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
