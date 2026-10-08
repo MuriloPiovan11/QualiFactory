@@ -1,0 +1,2 @@
+# QualiFactory
+Tenta zera ai
